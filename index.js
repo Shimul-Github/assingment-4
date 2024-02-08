@@ -12,34 +12,21 @@ function calculateMoney(ticketSale) {
         return 'Invalid Number'
     }
 }
-function checkName(str) {
-    const preferredLetters = ['A', 'y', 'i', 'e', 'o', 'u', 'w'];
-    const covertedCase = [];
-    const lastLetterOfName = str.toString()[str.length - 1];
-
-    for (let i of preferredLetters) {
-        covertedCase.pushpreferredLetters[i];
-        if (covertedCase.includes(lastLetterOfName)) {
-            return 'Good Name';
-            break;
-        } else {
-            return 'Bad Name';
-            break;
+function checkName(input) {
+    input = input.toLowerCase();
+    let preferredLetters = ['A', 'y', 'i', 'e', 'o', 'u', 'w'];
+    let covertedCase = preferredLetters.map(preferredLetters=>preferredLetters.toLowerCase());
+    const lastLetterOfName = input[input.length - 1];
+    if(typeof input !== 'string' || isNaN(input) === false){
+        return `'Error: Not a string'`;
+    }else{ for(let i of covertedCase){
+        if(covertedCase.includes(lastLetterOfName)){
+            return `'good name'`
+        }else{
+           return `'bad name'`
         }
     }
-    // if(typeof str !== 'string'){
-    //     return 'invalid';
-    // }else if() {
-    //     for(let i = 0; i<preferredLetters.length; i++)
-    //     { elseif( covertedCase.includes(lastLetterOfName)){return 'Good Name';
-    //       break;
-    //     }else {
-    //         return 'Bad Name';
-    //         break;
-    //     }
-    // }
-
-    // }    
+    }
 }
 function deleteInvalids(arr){
     // console.log(typeof arr);

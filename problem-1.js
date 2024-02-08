@@ -12,7 +12,7 @@ function calculateMoney(ticketSale) {
         return 'Invalid Number'
     }
 }
-console.log(calculateMoney(10));
+// console.log(calculateMoney(10));
 console.log(calculateMoney(-130));
-console.log(calculateMoney(1055));
-console.log(calculateMoney(93));
+// console.log(calculateMoney(1055));
+// console.log(calculateMoney(93));

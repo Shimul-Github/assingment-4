@@ -22,4 +22,4 @@ function deleteInvalids(arr){
     return newarr;
 }
 
-console.log(deleteInvalids(mixedArray4));
+console.log(deleteInvalids(mixedArray3));

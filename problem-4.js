@@ -17,3 +17,4 @@ function password(obj) {
     }
 }
 console.log(password(object4));
+Not OKAY
